@@ -66,7 +66,14 @@ h2.display { font-size: clamp(2.5rem, 5.4vw, 4.6rem); margin: 22px 0 26px; }
 /* Header */
 /* La barra cubre también la zona del notch / Dynamic Island (safe-area) */
 header { position: fixed; inset: 0 0 auto; z-index: 50; transition: background .4s, border-color .4s, padding .4s; border-bottom: 1px solid transparent; padding: calc(14px + env(safe-area-inset-top)) env(safe-area-inset-right) 14px env(safe-area-inset-left); }
-header.solid { background: rgba(18,14,11,.94); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-color: var(--line-dark); padding-top: calc(6px + env(safe-area-inset-top)); padding-bottom: 6px; }
+header.solid { border-color: var(--line-dark); padding-top: calc(6px + env(safe-area-inset-top)); padding-bottom: 6px; }
+/* Fondo translúcido de la barra: una sola capa que sube 160px por encima para tapar la franja de la hora en iPhone */
+header::before {
+  content: ""; position: absolute; z-index: -1; left: 0; right: 0; bottom: 0; top: -160px;
+  background: rgba(18,14,11,.88); -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
+  opacity: 0; transition: opacity .4s; pointer-events: none;
+}
+header.solid::before { opacity: 1; }
 .nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 64px; }
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand img { width: 50px; height: 50px; transition: width .4s, height .4s; }
