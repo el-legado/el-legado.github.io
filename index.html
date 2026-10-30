@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant y Parrilla en Melipilla | El Legado</title>
+  <meta name="description" content="Restaurant El Legado, Melipilla. Sabor, tradición e historia que Melipilla merece. Parrilla en Camino a Valparaíso 990, Los Molles. Lunes a domingo de 12:00 a 19:30.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand" aria-label="El Legado, inicio">
+        <img src="img/logo-sm.png" alt="El Legado">
+        <span>El Legado</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#cocina">Cocina</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#cava">Cava</a></li>
+        <li><a href="#visitanos">Visítanos</a></li>
+        <li><a href="descuentos.html">Descuentos</a></li>
+      </ul>
+      <a href="https://maps.app.goo.gl/aLC1cp5pymhR67wAA" target="_blank" rel="noopener" class="btn btn-ghost">Cómo llegar</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="overlay-menu" aria-label="Menú">
+    <a class="big js-close" href="#historia"><i>01</i>Historia</a>
+    <a class="big js-close" href="#cocina"><i>02</i>Cocina</a>
+    <a class="big js-close" href="#galeria"><i>03</i>Galería</a>
+    <a class="big js-close" href="#cava"><i>04</i>Cava</a>
+    <a class="big js-close" href="#visitanos"><i>05</i>Visítanos</a>
+    <a class="big" href="descuentos.html"><i>06</i>Descuentos</a>
+    <div class="meta">Camino a Valparaíso 990, Los Molles, Melipilla<br>Lunes a domingo · 12:00 a 19:30</div>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-media">
+      <img src="img/hero-full-1200.webp" srcset="img/hero-full-800.webp 800w, img/hero-full-1200.webp 1200w, img/hero-full-1600.webp 1600w" sizes="(max-width: 980px) 100vw, 44vw" alt="Cortes de carne asándose en la parrilla de El Legado" fetchpriority="high">
+    </div>
+    <canvas id="embers"></canvas>
+    <div class="hero-content">
+      <span class="kicker"><span class="bar"></span>Restaurant y Parrilla · Melipilla</span>
+      <h1 class="display">El legado del fuego,<br><em>a tu mesa.</em></h1>
+      <p class="lead">Sabor, tradición e historia que Melipilla merece. Cortes a las brasas, buena mesa y un espacio rústico para compartir.</p>
+      <div class="hero-actions">
+        <a href="#cocina" class="btn btn-solid">Descubre la cocina
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="https://maps.app.goo.gl/aLC1cp5pymhR67wAA" target="_blank" rel="noopener" class="btn btn-ghost">Cómo llegar
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light" id="historia">
+    <div class="container story-grid">
+      <div class="story-photos reveal">
+        <img class="main-ph" src="img/salon-900.webp" srcset="img/salon-480.webp 480w, img/salon-900.webp 900w" sizes="(max-width: 980px) 85vw, 520px" alt="Garzona atendiendo en el salón de madera de El Legado" loading="lazy">
+        <img class="small-ph" src="img/carne-corte-480.webp" srcset="img/carne-corte-480.webp 480w, img/carne-corte-900.webp 900w" sizes="(max-width: 980px) 40vw, 260px" alt="Comensal cortando un corte de carne a la parrilla" loading="lazy">
+        <img class="stamp" src="img/logo-sm.png" alt="">
+      </div>
+      <div class="story-text reveal">
+        <span class="kicker"><span class="num">01</span><span class="bar"></span>Nuestra historia</span>
+        <h2 class="display">Una casa de madera, <em>fuego</em> y buena compañía.</h2>
+        <p>En El Legado la parrilla se vive con paciencia y respeto por la tradición. Cada corte pasa por las brasas con el tiempo que merece, como se ha hecho siempre en el campo chileno.</p>
+        <p>Nuestro salón de madera en Los Molles está pensado para reunirse sin apuro: almuerzos en familia, celebraciones y encuentros con amigos alrededor de una buena mesa.</p>
+        <div class="pillars">
+          <div class="pillar"><b>Fuego</b><span>Cortes a las brasas</span></div>
+          <div class="pillar"><b>Tradición</b><span>El sabor de siempre</span></div>
+          <div class="pillar"><b>Encuentro</b><span>Mesa para compartir</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cocina">
+    <div class="container">
+      <div class="head-row reveal">
+        <div>
+          <span class="kicker"><span class="num">02</span><span class="bar"></span>Nuestra cocina</span>
+          <h2 class="display">Del fuego <em>a la mesa</em></h2>
+        </div>
+        <p class="lead">Ingredientes nobles, brasas encendidas y recetas que se heredan. Una cocina honesta, hecha para disfrutar sin prisa.</p>
+      </div>
+      <div class="dishes">
+        <article class="dish reveal">
+          <img src="img/carne-900.webp" srcset="img/carne-480.webp 480w, img/carne-900.webp 900w" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 300px" alt="Corte a la parrilla con papas al romero" loading="lazy">
+          <div class="dish-cap"><i>I.</i><h3>La parrilla</h3><p>Cortes seleccionados, sellados a las brasas y servidos a tu punto.</p></div>
+        </article>
+        <article class="dish reveal">
+          <img src="img/tabla-1000.webp" srcset="img/tabla-600.webp 600w, img/tabla-1000.webp 1000w" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 300px" alt="Tabla parrillera con brochetas, empanadas y pebre" loading="lazy">
+          <div class="dish-cap"><i>II.</i><h3>Para compartir</h3><p>Tablas generosas para poner al centro y disfrutar entre todos.</p></div>
+        </article>
+        <article class="dish reveal">
+          <img src="img/coctel-900.webp" srcset="img/coctel-480.webp 480w, img/coctel-900.webp 900w" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 300px" alt="Cóctel servido en copa" loading="lazy">
+          <div class="dish-cap"><i>III.</i><h3>Coctelería</h3><p>Tragos preparados al momento para acompañar la sobremesa.</p></div>
+        </article>
+        <article class="dish reveal">
+          <img src="img/sopaipillas-900.webp" srcset="img/sopaipillas-480.webp 480w, img/sopaipillas-900.webp 900w" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 300px" alt="Postre casero servido en plato blanco" loading="lazy">
+          <div class="dish-cap"><i>IV.</i><h3>Postres</h3><p>Dulces caseros y tradicionales para cerrar la mesa.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <img class="bg-photo chimenea" src="img/chimenea-1400.webp" srcset="img/chimenea-900.webp 900w, img/chimenea-1400.webp 1400w, img/chimenea-2048.webp 2048w" sizes="100vw" alt="" loading="lazy">
+    <div class="container reveal">
+      <blockquote>“Sabor, tradición e historia que Melipilla merece.”</blockquote>
+      <cite>El Legado · Restaurant y Parrilla</cite>
+    </div>
+  </section>
+
+  <section class="section light" id="galeria">
+    <div class="container">
+      <div class="head-row reveal">
+        <div>
+          <span class="kicker"><span class="num">03</span><span class="bar"></span>Galería</span>
+          <h2 class="display">Momentos <em>en casa</em></h2>
+        </div>
+        <p class="lead">Un salón de madera, la calidez del fuego y mesas que se llenan de historias.</p>
+      </div>
+      <div class="gallery reveal">
+        <figure class="g1"><img src="img/comedor-900.webp" srcset="img/comedor-480.webp 480w, img/comedor-900.webp 900w" sizes="(max-width: 980px) 100vw, 610px" alt="Comedor rústico de madera de El Legado" loading="lazy"><figcaption>Nuestro comedor</figcaption></figure>
+        <figure class="g2"><img src="img/vino-900.webp" srcset="img/vino-480.webp 480w, img/vino-900.webp 900w" sizes="(max-width: 980px) 50vw, 300px" alt="Vino tinto servido junto a un plato de carne" loading="lazy"><figcaption>Maridaje</figcaption></figure>
+        <figure class="g3"><img src="img/mesa-900.webp" srcset="img/mesa-480.webp 480w, img/mesa-900.webp 900w" sizes="(max-width: 980px) 50vw, 300px" alt="Mesa con tabla, vino y amigos" loading="lazy"><figcaption>La buena mesa</figcaption></figure>
+        <figure class="g4"><img src="img/amigos-900.webp" srcset="img/amigos-480.webp 480w, img/amigos-900.webp 900w" sizes="(max-width: 980px) 50vw, 610px" alt="Amigas compartiendo en El Legado" loading="lazy"><figcaption>Para compartir</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-2" id="cava">
+    <div class="container cava-grid">
+      <div class="cava-photo reveal">
+        <img src="img/vinos-805.webp" srcset="img/vinos-480.webp 480w, img/vinos-805.webp 805w" sizes="(max-width: 980px) 90vw, 560px" alt="Cava de vinos chilenos en mueble rústico de madera" loading="lazy">
+      </div>
+      <div class="reveal">
+        <span class="kicker"><span class="num">04</span><span class="bar"></span>Nuestra cava</span>
+        <h2 class="display">El maridaje perfecto <em>para cada corte</em></h2>
+        <p class="lead">Una selección de vinos chilenos elegidos para acompañar lo mejor de nuestra parrilla, desde tintos con cuerpo hasta opciones más ligeras para compartir.</p>
+        <ul class="cava-list">
+          <li><b>Tintos</b><span>Carmenere, Cabernet Sauvignon y Merlot</span></li>
+          <li><b>Copa o botella</b><span>Pregunta por la sugerencia del día</span></li>
+          <li><b>Para celebrar</b><span>Etiquetas especiales para tu mesa</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light" id="visitanos">
+    <div class="container visit-grid">
+      <div class="reveal">
+        <span class="kicker"><span class="num">05</span><span class="bar"></span>Visítanos</span>
+        <h2 class="display">Te esperamos <em>en Melipilla</em></h2>
+        <div class="visit-cards">
+          <div class="visit-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><small>Dirección</small><a href="https://maps.app.goo.gl/aLC1cp5pymhR67wAA" target="_blank" rel="noopener">Camino a Valparaíso 990,<br>Los Molles, Melipilla</a></div>
+          </div>
+          <div class="visit-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><small>Horario</small><span>Lunes a domingo<br>12:00 a 19:30 horas</span></div>
+          </div>
+          <div class="visit-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+            <div><small>Síguenos</small><a href="https://www.instagram.com/el.legadorest/" target="_blank" rel="noopener">@el.legadorest</a></div>
+          </div>
+        </div>
+        <a href="https://maps.app.goo.gl/aLC1cp5pymhR67wAA" target="_blank" rel="noopener" class="btn btn-ghost">Abrir en Google Maps
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="map reveal">
+        <iframe title="Mapa de El Legado" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=El%20Legado%20Restaurant%20Melipilla%2C%20Melipilla%2C%20Chile&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="foot-top">
+        <img src="img/logo-sm.png" alt="El Legado · Restaurant y Parrilla">
+        <p>Sabor, tradición e historia <em>que Melipilla merece.</em></p>
+        <div class="foot-links">
+          <a href="#historia">Historia</a>
+          <a href="#cocina">Cocina</a>
+          <a href="#galeria">Galería</a>
+          <a href="#cava">Cava</a>
+          <a href="descuentos.html">Descuentos</a>
+          <a href="https://www.instagram.com/el.legadorest/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="year"></span> El Legado · Restaurant y Parrilla</span>
+        <span>Camino a Valparaíso 990, Los Molles, Melipilla · Lunes a domingo 12:00–19:30</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

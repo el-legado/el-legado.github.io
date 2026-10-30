@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descuentos | El Legado · Restaurant y Parrilla</title>
+  <meta name="description" content="Consulta los beneficios y descuentos asociados a tu RUT en El Legado, restaurant y parrilla en Melipilla.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="El Legado, inicio">
+        <img src="img/logo-sm.png" alt="El Legado">
+        <span>El Legado</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#historia">Historia</a></li>
+        <li><a href="index.html#cocina">Cocina</a></li>
+        <li><a href="index.html#galeria">Galería</a></li>
+        <li><a href="index.html#cava">Cava</a></li>
+        <li><a href="index.html#visitanos">Visítanos</a></li>
+        <li><a href="descuentos.html" class="active" aria-current="page">Descuentos</a></li>
+      </ul>
+      <a href="https://maps.app.goo.gl/aLC1cp5pymhR67wAA" target="_blank" rel="noopener" class="btn btn-ghost">Cómo llegar</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="overlay-menu" aria-label="Menú">
+    <a class="big js-close" href="index.html#historia"><i>01</i>Historia</a>
+    <a class="big js-close" href="index.html#cocina"><i>02</i>Cocina</a>
+    <a class="big js-close" href="index.html#galeria"><i>03</i>Galería</a>
+    <a class="big js-close" href="index.html#cava"><i>04</i>Cava</a>
+    <a class="big js-close" href="index.html#visitanos"><i>05</i>Visítanos</a>
+    <a class="big js-close active" href="descuentos.html" aria-current="page"><i>06</i>Descuentos</a>
+    <div class="meta">Camino a Valparaíso 990, Los Molles, Melipilla<br>Lunes a domingo · 12:00 a 19:30</div>
+  </nav>
+
+  <section class="page-hero">
+    <img class="bg-photo" src="img/tabla-1365.webp" srcset="img/tabla-600.webp 600w, img/tabla-1000.webp 1000w, img/tabla-1365.webp 1365w" sizes="100vw" alt="" fetchpriority="high">
+    <div class="container">
+      <span class="kicker"><span class="bar"></span>Beneficios El Legado</span>
+      <h1 class="display">Descuentos <em>de la casa</em></h1>
+      <p class="lead">Más razones para reunirse alrededor del fuego. Consulta los beneficios exclusivos que tenemos para ti.</p>
+    </div>
+  </section>
+
+  <section class="section light" id="beneficios">
+    <div class="container rut-wrap reveal">
+      <span class="kicker"><span class="bar"></span>Clientes El Legado<span class="bar"></span></span>
+      <h2 class="display">Descubre <em>tus beneficios</em></h2>
+      <p class="lead">Introduce tu RUT para ver tus beneficios.</p>
+
+      <form class="rut-form" id="rutForm" novalidate>
+        <div class="rut-field">
+          <label for="rut">Tu RUT</label>
+          <input id="rut" name="rut" type="text" inputmode="text" autocomplete="off" maxlength="12" placeholder="12.345.678-9" aria-describedby="rutHelp" required>
+        </div>
+        <button type="submit" class="btn btn-solid" id="rutBtn" aria-label="Buscar beneficios">
+          <span class="spinner" aria-hidden="true"></span>
+          <span class="label">Buscar</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        </button>
+      </form>
+      <p class="rut-help" id="rutHelp" aria-live="polite"></p>
+
+      <div class="result" id="result" hidden aria-live="polite"></div>
+
+      <p class="rut-privacy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+        Tu RUT solo se usa para consultar tus beneficios.
+      </p>
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="container reveal">
+      <span class="kicker"><span class="bar"></span>Te esperamos<span class="bar"></span></span>
+      <h2 class="display">Lunes a domingo, <em>de 12:00 a 19:30</em></h2>
+      <p class="lead">Camino a Valparaíso 990, Los Molles, Melipilla.</p>
+      <div class="hero-actions">
+        <a href="https://maps.app.goo.gl/aLC1cp5pymhR67wAA" target="_blank" rel="noopener" class="btn btn-solid">Cómo llegar
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="index.html" class="btn btn-ghost">Volver al inicio
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <dialog class="qr-dialog" id="qrDialog" aria-labelledby="qrTitle">
+    <button type="button" class="qr-close" aria-label="Cerrar">×</button>
+    <img class="qr-logo" src="img/logo-sm.png" alt="">
+    <p class="qr-kicker" id="qrTitle">Tu código de descuento</p>
+    <p class="qr-amount"></p>
+    <p class="qr-detail"></p>
+    <div class="qr-box">
+      <div class="qr-code" role="img" aria-label="Código QR del descuento"></div>
+      <div class="qr-expired-msg">
+        <b>Código expirado</b>
+        <button type="button" class="btn btn-solid qr-renew"><span class="spinner" aria-hidden="true"></span><span class="label">Generar uno nuevo</span></button>
+      </div>
+    </div>
+    <div class="qr-timer">
+      <span>Válido por</span>
+      <b class="qr-time">5:00</b>
+    </div>
+    <div class="qr-bar"><span></span></div>
+    <p class="qr-hint">Muestra este código al mesero al momento de pagar.</p>
+  </dialog>
+
+  <footer>
+    <div class="container">
+      <div class="foot-top">
+        <img src="img/logo-sm.png" alt="El Legado · Restaurant y Parrilla">
+        <p>Sabor, tradición e historia <em>que Melipilla merece.</em></p>
+        <div class="foot-links">
+          <a href="index.html#historia">Historia</a>
+          <a href="index.html#cocina">Cocina</a>
+          <a href="index.html#galeria">Galería</a>
+          <a href="index.html#cava">Cava</a>
+          <a href="descuentos.html">Descuentos</a>
+          <a href="https://www.instagram.com/el.legadorest/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="year"></span> El Legado · Restaurant y Parrilla</span>
+        <span>Camino a Valparaíso 990, Los Molles, Melipilla · Lunes a domingo 12:00–19:30</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/beneficios.js"></script>
+</body>
+</html>

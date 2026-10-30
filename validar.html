@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Validar descuento | El Legado</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="staff">
+
+  <main class="staff-wrap">
+    <header class="staff-head">
+      <img src="img/logo-sm.png" alt="El Legado">
+      <div>
+        <p class="kicker">Uso interno · Meseros</p>
+        <h1>Validar descuento</h1>
+      </div>
+    </header>
+
+    <!-- Acceso con clave -->
+    <section class="access" id="accessView" hidden>
+      <p class="access-text">Esta página es solo para el personal de El Legado. Abre el link que te entregó el encargado o escribe la clave de acceso.</p>
+      <form id="accessForm" class="access-form" autocomplete="off">
+        <label for="accessKey">Clave de acceso</label>
+        <input id="accessKey" type="password" autocomplete="off" spellcheck="false" required>
+        <button type="submit" class="btn btn-solid staff-btn"><span class="label">Entrar</span></button>
+      </form>
+      <p class="staff-msg" id="accessMsg" aria-live="polite"></p>
+    </section>
+
+    <!-- Escáner -->
+    <section class="scan" id="scanView">
+      <div class="scan-frame" id="scanFrame">
+        <video id="video" playsinline muted></video>
+        <canvas id="canvas" hidden></canvas>
+        <div class="scan-corners" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="scan-idle" id="scanIdle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"/></svg>
+          <p>Apunta la cámara al código QR del cliente</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-solid staff-btn" id="scanBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/></svg>
+        <span class="label">Escanear QR</span>
+      </button>
+      <p class="staff-msg" id="scanMsg" aria-live="polite"></p>
+    </section>
+
+    <!-- Resultado -->
+    <section class="verdict" id="verdict" hidden aria-live="assertive"></section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/validar.js"></script>
+</body>
+</html>
