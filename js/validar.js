@@ -105,6 +105,7 @@ function extraerToken(texto) {
 // ---------- Validación ----------
 async function validar(token) {
   ultimoToken = token;
+  accessView.hidden = true;
   scanView.hidden = true;
   verdict.hidden = false;
   verdict.className = 'verdict checking';
@@ -139,7 +140,7 @@ function mostrarValido(d) {
     <p class="verdict-amount">${escaparHtml(d.descuento)}</p>
     ${d.detalle ? `<p class="verdict-sub">${escaparHtml(d.detalle)}</p>` : ''}
     <dl class="verdict-data">
-      ${d.nombre ? `<div><dt>Cliente</dt><dd>${escaparHtml(d.nombre)}</dd></div>` : ''}
+      ${d.nombre || d.apellido ? `<div><dt>Cliente</dt><dd>${escaparHtml([d.nombre, d.apellido].filter(Boolean).join(' '))}</dd></div>` : ''}
       <div><dt>RUT</dt><dd>${escaparHtml(d.rut)}</dd></div>
       <div><dt>Vence en</dt><dd class="verdict-time">--:--</dd></div>
     </dl>
