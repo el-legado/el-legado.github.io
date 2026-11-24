@@ -55,4 +55,17 @@ const tick = () => {
 };
 if (canvas && !matchMedia('(prefers-reduced-motion: reduce)').matches) { resize(); addEventListener('resize', resize); tick(); }
 
+// Fondo de la cita según temporada: chimenea de abril a septiembre, terraza de octubre a marzo.
+// La terraza solo reemplaza a la chimenea si su foto existe y carga bien.
+const citaTemporada = document.getElementById('cita-temporada');
+if (citaTemporada) {
+  const mes = new Date().getMonth() + 1;
+  const terraza = citaTemporada.querySelector('.terraza');
+  if (terraza && (mes >= 10 || mes <= 3)) {
+    terraza.addEventListener('load', () => citaTemporada.classList.add('verano'), { once: true });
+    terraza.srcset = terraza.dataset.srcset;
+    terraza.src = terraza.dataset.src;
+  }
+}
+
 document.getElementById('year').textContent = new Date().getFullYear();
